@@ -1,4 +1,4 @@
-package taskgroupXY.taskXZ.main;
+package team05.task13.main;
 
 public class Application {
     public static void main(String... args) {
