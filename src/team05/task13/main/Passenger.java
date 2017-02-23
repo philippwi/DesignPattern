@@ -8,7 +8,7 @@ public class Passenger {
     public Passenger(char ticketVersion){
         try {
             if (ticketVersion == 's' || ticketVersion ==  'S') this.ticket = new TicketS();
-            else if (ticketVersion == 'm' || ticketVersion ==  'M') this.ticket = new TicketM();
+            else if (ticketVersion == 'm' || ticketVersion ==  'M') this.ticket = new TicketAdapter();
         }catch(Exception e){
             e.printStackTrace();
             System.out.println("Ticket version specified does not exist");

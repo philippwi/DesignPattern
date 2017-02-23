@@ -9,7 +9,7 @@ public class ReadingDevice {
     public int pins;
 
     public ReadingDevice(){
-        listeners = new ArrayList<>();
+        this.listeners = new ArrayList<>();
         this.pins = 2;
     }
 
@@ -21,8 +21,8 @@ public class ReadingDevice {
         listeners.remove(l);
     }
 
-    public  void detectViolation(){
-
+    public  void detectViolation(IReadingDeviceListener c, ArrayList<Passenger> ps, Passenger p){
+        c.reportViolation(ps, p);
     }
 
 }
